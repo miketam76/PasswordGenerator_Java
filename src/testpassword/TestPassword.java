@@ -1,5 +1,5 @@
 package testpassword;
-import com.password_generator.PasswordGenerator;
+import com.password.generator.PasswordGenerator;
 
 public class TestPassword {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class TestPassword {
 		int good = 0;
 		
 		
-		while(count < 100000) {
+		while(count < 10000) {
 			String p = PasswordGenerator.generatePassword();
 			System.out.println(p);
 			if(PasswordGenerator.validatePassword(p))
